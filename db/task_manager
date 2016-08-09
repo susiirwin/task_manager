@@ -1,0 +1,6 @@
+---
+tasks:
+- id: 1
+  title: another task
+  description: eat all of the ham
+total: 1
