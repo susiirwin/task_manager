@@ -1,4 +1,6 @@
-.application_title {
+.jumbotron {
+  background-color: #F1C40F !important;
+}
+.jumbotron h1 {
   font-family: sans-serif;
-  size: 20px;
 }
