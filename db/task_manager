@@ -1,8 +1,5 @@
 ---
 tasks:
-- id: 1
-  title: another task
-  description: eat all of the ham
 - id: 2
   title: this is another task
   description: Here is yet another thing to do
@@ -19,4 +16,7 @@ tasks:
     chop ribeye spare ribs shank cow. Andouille meatball sausage, meatloaf flank pig
     brisket beef ribs shoulder tongue ham hock ribeye. Drumstick jerky leberkas porchetta
     ground round turducken alcatra kielbasa.
-total: 5
+- id: 6
+  title: another task to see the ID
+  description: here is a newer task to see what the ID turns out to be
+total: 6
