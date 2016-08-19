@@ -11,8 +11,9 @@ module TestHelpers
   end
 
   def task_manager
-    database = YAML::Store.new("db/task_manager_test")
-    @task_manager ||= TaskManager.new(database)
+    database = SQLite3::Database.new('db/task_manager_test.db')
+    database.results_as_hash = true
+    TaskManager.new(database)
   end
 end
 
