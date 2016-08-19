@@ -1,3 +1,5 @@
+require 'sqlite3'
+
 class TaskManagerApp < Sinatra::Base
   set :root, File.expand_path("..", __dir__)
   set :method_override, true
@@ -44,7 +46,7 @@ class TaskManagerApp < Sinatra::Base
     if ENV['RACK_ENV'] == "test"
       database = SQLite3::Database.new('db/task_manager_test.db')
     else
-      database = SQLite3::Database.new('db/task_manager.db')
+      database = SQLite3::Database.new('db/task_manager_development.db')
     end
     database.results_as_hash = true
     TaskManager.new(database)
