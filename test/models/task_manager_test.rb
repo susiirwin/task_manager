@@ -28,8 +28,7 @@ class TaskManagerTest < Minitest::Test
     end
 
     def test_it_returns_all_tasks
-      create_a_task
-      create_a_task
+      2. times { create_a_task }
 
       assert_equal 2, number_of_tasks
       assert_instance_of Task, task_manager.all.last
